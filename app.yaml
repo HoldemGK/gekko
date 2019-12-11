@@ -13,5 +13,5 @@
 
 # [START gae_quickstart_yaml]
 runtime: nodejs10
-service: default
+service: gekko
 # [END gae_quickstart_yaml]

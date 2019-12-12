@@ -13,7 +13,7 @@ resource "heroku_build" "default" {
   buildpacks = ["https://github.com/HoldemGK/gekko.git"]
 
   source = {
-    url = "https://github.com/HoldemGK/gekko/archive/v1.0.tar.gz"
-    version = "1.0"
+    url = "https://github.com/HoldemGK/gekko/archive/work-stable.tar.gz"
+    version = "work-stable"
   }
 }

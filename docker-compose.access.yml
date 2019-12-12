@@ -4,7 +4,7 @@
 #   docker-compose -f docker-compose.yml -f docker-compose.access.yml
 version: '3'
   services:
-    app:
+    gekko:
       environment:
         # /docs/authentication/production
         GOOGLE_APPLICATION_CREDENTIALS: /root/keys/keyfile.json

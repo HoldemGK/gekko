@@ -1,4 +1,4 @@
-FROM node:9
+FROM node:10
 
 ENV HOST localhost
 ENV PORT 3000
@@ -14,7 +14,7 @@ RUN npm install -g --production node-gyp && \
 # Install app dependencies
 COPY package.json /usr/src/app
 RUN npm install --production && \
-    npm install --production redis@0.10.0 talib@1.0.2 tulind@0.8.7 pg && \
+    npm install --production redis@latest talib@latest tulind@latest pg && \
     npm cache clean --force
 
 # Bundle app source

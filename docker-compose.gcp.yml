@@ -1,0 +1,11 @@
+# docker-compose.gcp.yml
+#
+# Usage:
+#   export DOCKER_IMAGE_TAG=$(git rev-parse --short HEAD)
+#   docker-compose -f docker-compose.yml -f docker-compose.gcp.yml
+##
+version: '3'
+
+services:
+ gekko:
+   image: gcr.io/mr-gekko/gekko-image:${DOCKER_IMAGE_TAG:-latest}
